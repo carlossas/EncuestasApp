@@ -16,8 +16,8 @@ export class InicioComponent implements OnInit {
   ngOnInit() {
   }
 
-  irEmpleados() {
-    this.router.navigate(['/empleados']);
+  irSucursales() {
+    this.router.navigate(['/sucursales']);
   }
 
 }
