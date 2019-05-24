@@ -1,3 +1,22 @@
-<p>
-  preguntas works!
-</p>
+<div class="container">
+    <div *ngFor="let item of preguntas">
+        <div *ngIf="item.id === indexActual" class="row justify-content-center pt-5">
+            <div class="col-6">
+                <p class="pregunta-text">
+                    {{item.pregunta}}
+                </p>
+            </div>
+            <div class="col-2">
+                <img (click)="irAgradecimiento()" src="./assets/img/mal.png" class="d-block satisfaccion m-auto img-fluid">
+            </div>
+            <div class="col-2">
+                <img (click)="irAgradecimiento()" src="./assets/img/medio.png" class="d-block satisfaccion m-auto img-fluid">
+
+            </div>
+            <div class="col-2">
+                <img (click)="irAgradecimiento()" src="./assets/img/bien.png" class="d-block satisfaccion m-auto img-fluid">
+            </div>
+        </div>
+    </div>
+
+</div>
